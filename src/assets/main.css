@@ -1,0 +1,36 @@
+@import './base.css';
+@import '../input.css';
+
+#app {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: rgb(18, 50, 234);
+  transition: 0.4s;
+}
+/*
+@media (hover: hover) {
+  a:hover {
+    background-color: rgb(37, 19, 244);
+  }
+}
+*/
+@media (min-width: 1024px) {
+  body {
+    display: absolute;
+    place-items: center;
+  }
+
+  #app {
+    /*i changed grid to flex*/
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+  }
+}
